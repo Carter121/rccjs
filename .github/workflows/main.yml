@@ -19,6 +19,8 @@ jobs:
       with:
         node-version: '20.x'
     - name: 'Install pNPM'
+      with:
+        version: 10
       uses: pnpm/action-setup@v4
     - name: 'Install Deps'
       run: pnpm install
